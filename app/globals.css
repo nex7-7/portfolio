@@ -58,6 +58,14 @@
   }
 }
 
+.buttonProj:hover {
+  color: hsl(var(--background));
+  background-color: hsl(var(--foreground));
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 /* px-16 py-10 hero flex flex-col justify-start gap-4 h-[calc(200svh-6rem)] */
 
 /* After */

@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -19,9 +19,32 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        test: "0 7px 8px -1px rgba(0, 0, 0, 0.9), 0 4px 4px -2px rgba(0, 0, 0, 0.9), 0px 4px 60px 0px rgba(255, 255, 255, 0.1)",
+      },
+      aspectRatio: {
+        vertical: "9 / 16",
+        laptop: "5 / 6",
+      },
+      screens: {
+        "2xl": { max: "1535px" },
+        // => @media (max-width: 1535px) { ... }
+
+        xl: { max: "1279px" },
+        // => @media (max-width: 1279px) { ... }
+
+        lg: { max: "1023px" },
+        // => @media (max-width: 1023px) { ... }
+
+        md: { max: "831px" },
+        // => @media (max-width: 767px) { ... }
+
+        sm: { max: "639px" },
+        // => @media (max-width: 639px) { ... }
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        redaction: ["var(--font-serif)", ...fontFamily.serif]
+        redaction: ["var(--font-serif)", ...fontFamily.serif],
       },
       colors: {
         border: "hsl(var(--border))",
