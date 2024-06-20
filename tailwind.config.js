@@ -22,6 +22,10 @@ module.exports = {
       boxShadow: {
         test: "0 7px 8px -1px rgba(0, 0, 0, 0.9), 0 4px 4px -2px rgba(0, 0, 0, 0.9), 0px 4px 60px 0px rgba(255, 255, 255, 0.1)",
       },
+      dropShadow: {
+        dark: "0 0px 10px rgb(255 255 255 / 0.6)",
+        light: "0px 3px 5px rgb(0 0 0 / 0.3)",
+      },
       aspectRatio: {
         vertical: "9 / 16",
         laptop: "5 / 6",
