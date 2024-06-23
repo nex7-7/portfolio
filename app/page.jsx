@@ -4,7 +4,6 @@ import { About } from "@/components/About";
 import { Projects } from "@/components/Projects";
 import { Navbar } from "../components/Navbar";
 import { Hero } from "@/components/Hero";
-import { RotaryKnob } from "@/components/RotaryKnob";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      {/* <RotaryKnob /> */}
       <Contact />
     </main>
   );

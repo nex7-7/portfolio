@@ -21,6 +21,7 @@ export const Projects = () => {
       description:
         "A Drone with a self coded Flight Controller, based on the Arduino Microcontroller Platform",
       img: null,
+      vid: null,
       buttons: [
         { name: "GitHub", link: null },
         { name: "View", link: null },
@@ -31,8 +32,8 @@ export const Projects = () => {
       text: "NMIMS PORTAL",
       description:
         "A Full Stack Website using Firebase for backend and Firestore for Authentication",
-      img: nmimsImg,
-
+      img: "/images/nmimsProj.jpg",
+      vid: null,
       buttons: [
         {
           name: "GitHub",
@@ -46,10 +47,11 @@ export const Projects = () => {
       text: "TIC-TAC-TOE",
       description:
         "A Simple game of tic-tac-toe implemented using Vanilla JS, CSS, HTML",
-      img: null,
+      img: "/images/ticTacToe.png",
+      vid: null,
       buttons: [
-        { name: "GitHub", link: null },
-        { name: "View", link: null },
+        { name: "GitHub", link: "https://github.com/nex7-7/Tic-Tac-Toe-Game" },
+        { name: "View", link: "https://nex7-7.github.io/Tic-Tac-Toe-Game/" },
       ],
     },
     {
@@ -57,6 +59,7 @@ export const Projects = () => {
       text: "PARTICLE DETECTOR",
       description: "An actively cooled cloud chamber which detects particles",
       img: null,
+      vid: "/video/particleDetector.mp4",
       buttons: [{ name: "View", link: null }],
     },
   ];

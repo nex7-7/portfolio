@@ -28,6 +28,7 @@ export const ProjectCard = ({ textItems, active, setActive }) => {
           const title = textItem.text;
           const description = textItem.description;
           const img = textItem.img;
+          const vid = textItem.vid;
           const buttons = textItem.buttons;
 
           return (
@@ -42,6 +43,16 @@ export const ProjectCard = ({ textItems, active, setActive }) => {
               <div className="bg-gray-100 dark:bg-gray-900 h-3/5 rounded-md flex items-center justify-center relative">
                 {img && (
                   <Image src={img} fill={true} className="object-cover" />
+                )}
+                {vid && (
+                  <video  
+                    src={vid}
+                    autoPlay
+                    loop
+                    muted
+                    className="h-full w-full object-cover"
+                    type="video/MP4"
+                  ></video>
                 )}
               </div>
               <div className="text-primary h-2/5 px-1 py-1 flex flex-col justify-between">

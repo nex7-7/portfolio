@@ -66,6 +66,21 @@
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 8px;
+}
+
 /* .test {
   filter: drop-shadow(0 10px 5px rgb(255, 255, 255));
 } */

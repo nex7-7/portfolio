@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { fontSans } from "./fonts";
 import { Toaster } from "react-hot-toast";
+import { Cursor } from "@/components/ui/cursor";
 
 //components
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Toaster />
+          {/* <Cursor /> */}
           {children}
         </ThemeProvider>
       </body>
