@@ -2,9 +2,6 @@
 
 import { useState } from "react";
 
-// images
-import nmimsImg from "../public/images/nmimsProj.jpg";
-
 // components
 import { ProjectCard } from "./ProjectCard";
 import { ProjectText } from "./ProjectText";

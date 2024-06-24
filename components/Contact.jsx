@@ -39,7 +39,7 @@ export const Contact = () => {
               <p className="text-xl sm:text-base font-light">GitHub</p>
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/snehilsinha77/" target="_blank">
+          <a href="https://www.linkedin.com/in/snehilsinha7/" target="_blank">
             <div className="flex flex-row gap-3 items-center justify-center hover:text-primary transition-all duration-500 ease-out">
               <LinkedInLogoIcon className="h-8 w-8" />
               <p className="text-xl sm:text-base font-light">LinkedIn</p>
