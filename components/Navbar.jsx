@@ -32,8 +32,11 @@ export const Navbar = () => {
     },
   ];
 
+  // TODO: Add this to nav className:
+  // bg-gradient-to-br from-[rgba(255,255,255,0.5)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(255,255,255,0.2)] dark:to-[rgba(0,0,0,0.3)] backdrop-blur-sm dark:backdrop-blur-xl bg-transparent
+
   return (
-    <nav className="absolute top-0 left-0 z-10 flex flex-row justify-between items-center h-24 w-full px-10 sm:px-6 md:px-6 backdrop-blur-sm dark:backdrop-blur-xl bg-transparent bg-gradient-to-br from-[rgba(255,255,255,0.5)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(255,255,255,0.2)] dark:to-[rgba(0,0,0,0.3)]">
+    <nav className="absolute top-0 left-0 z-10 flex flex-row justify-between items-center h-24 w-full px-10 sm:px-6 md:px-6">
       <div>
         <p className="text-3xl font-serif">
           <span>Snehil</span> <span className="sm:hidden">Sinha</span>
