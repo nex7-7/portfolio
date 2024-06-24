@@ -59,7 +59,7 @@ export const Projects = () => {
       text: "PARTICLE DETECTOR",
       description: "An actively cooled cloud chamber which detects particles",
       img: null,
-      vid: "/video/particleDetector.mp4",
+      vid: null,
       buttons: [{ name: "View", link: null }],
     },
   ];
