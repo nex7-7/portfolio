@@ -12,7 +12,7 @@ export const About = () => {
       <p className="title text-5xl font-serif italic">About</p>
       <Opacity>
         <p>
-          I'm currently a{" "}
+          I&apos;m currently a{" "}
           <span className="text-4xl sm:text-3xl md:text-3xl font-medium">
             Computer Science
           </span>{" "}
@@ -20,7 +20,7 @@ export const About = () => {
           <span className="text-4xl sm:text-3xl md:text-3xl font-medium">
             web development
           </span>
-          . I'm passionate about creating dynamic and user-friendly web
+          . I&apos;m passionate about creating dynamic and user-friendly web
           experiences. Besides coding for the web, I love to{" "}
           <span className="text-4xl  sm:text-3xl md:text-3xl font-medium">
             tinker with hardware

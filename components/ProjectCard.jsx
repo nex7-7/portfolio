@@ -42,10 +42,15 @@ export const ProjectCard = ({ textItems, active, setActive }) => {
             >
               <div className="bg-gray-100 dark:bg-gray-900 h-3/5 rounded-md flex items-center justify-center relative">
                 {img && (
-                  <Image src={img} fill={true} className="object-cover" />
+                  <Image
+                    src={img}
+                    fill={true}
+                    alt={`${title} Image`}
+                    className="object-cover"
+                  />
                 )}
                 {vid && (
-                  <video  
+                  <video
                     src={vid}
                     autoPlay
                     loop

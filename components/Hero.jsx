@@ -24,7 +24,7 @@ export const Hero = () => {
       <Video />
       <div className="bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] mt-[6rem] absolute sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 hero flex flex-col justify-start gap-4 sm:gap-8 top-0 left-0 w-full h-[calc(100%-6rem)]">
         <span className="sm:text-3xl md:text-3xl text-5xl text-primary font-serif italic">
-          I'm a
+          I&apos;m a
         </span>
         {textItems.map((textItem) => (
           <Reveal

@@ -7,8 +7,8 @@ export const Reveal = ({ text, className, offset }) => {
   // console.log(inputText);
   return (
     <div className="flex flex-row flex-wrap">
-      {text.split(" ").map((t) => (
-        <div className="overflow-y-hidden">
+      {text.split(" ").map((t, index) => (
+        <div className="overflow-y-hidden" key={index}>
           <motion.div
             className={className}
             variants={{
