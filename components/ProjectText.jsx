@@ -8,15 +8,18 @@ export const ProjectText = ({ textItems, active, setActive }) => {
   }
 
   return (
-    <div id="heightCalc" className="overflow-x-hidden px-7 py-2 relative col-span-2 sm:hidden md:hidden">
+    <div className="overflow-x-hidden px-7 py-2 relative col-span-2 sm:hidden md:hidden">
       {textItems.map((textItem) => {
         let className;
-        let bottomPos = (50 + ((active - textItem.id) * 10))
+        let bottomPos = 50 + (active - textItem.id) * 12;
+        let padding =
+          active - textItem.id >= 0
+            ? (active - textItem.id) * 0.725
+            : (textItem.id - active) * 0.725;
         if (textItem.id == active) {
-          className = `absolute text-4xl text-primary drop-shadow-light dark:drop-shadow-dark font-semibold transition-all ease-out duration-500`;
+          className = `absolute text-5xl 2xl:text-[3.375rem] text-primary drop-shadow-light dark:drop-shadow-dark font-semibold transition-all ease-out duration-500`;
         } else {
-          className =
-            `absolute text-4xl text-muted-foreground font-semibold transition-all ease-out duration-500`;
+          className = `absolute text-4xl 2xl:text-[3rem] text-muted-foreground font-semibold transition-all ease-out duration-500`;
         }
 
         return (
@@ -24,7 +27,7 @@ export const ProjectText = ({ textItems, active, setActive }) => {
             key={textItem.id}
             className={className}
             onClick={() => handleClick(textItem.id)}
-            style={{bottom: `${bottomPos}%`}}
+            style={{ bottom: `${bottomPos}%`, paddingLeft: `${padding}rem` }}
           >
             {textItem.text}
           </p>

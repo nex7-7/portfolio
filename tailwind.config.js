@@ -20,7 +20,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        test: "0 7px 8px -1px rgba(0, 0, 0, 0.9), 0 4px 4px -2px rgba(0, 0, 0, 0.9), 0px 4px 60px 0px rgba(255, 255, 255, 0.1)",
+        test: "0 7px 8px -1px rgba(0, 0, 0, 0.9), 0 4px 4px -2px rgba(0, 0, 0, 0.9), 0px 4px 25px 0px rgba(255, 255, 255, 0.1)",
       },
       dropShadow: {
         dark: "0 0px 10px rgb(255 255 255 / 0.6)",
@@ -31,7 +31,7 @@ module.exports = {
         laptop: "5 / 6",
       },
       screens: {
-        "2xl": { max: "1535px" },
+        "2xl": { min: "1440px" },
         // => @media (max-width: 1535px) { ... }
 
         xl: { max: "1279px" },

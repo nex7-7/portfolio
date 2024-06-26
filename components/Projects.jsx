@@ -67,7 +67,7 @@ export const Projects = () => {
       className="projects flex flex-col items-center h-svh px-4 py-4"
     >
       <div className="h-1/6 flex justify-center items-center">
-        <p className="title text-5xl font-serif italic">Projects</p>
+        <p className="title text-5xl  font-serif italic">Projects</p>
       </div>
       <motion.div
         className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 h-5/6 w-full"
