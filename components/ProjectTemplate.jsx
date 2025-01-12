@@ -8,8 +8,8 @@ export const ProjectTemplate = ({ selectedProject }) => {
 
   return (
     <div className="mt-[6rem] 2xl:mt-[12vh] sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 w-full h-[calc(100%-6rem)]">
-      <div className="flex flex-row justify-between gap-5 h-full">
-        <div className="w-1/3 flex flex-col justify-center gap-2">
+      <div className="flex flex-row sm:flex-col md:flex-col justify-between gap-5 h-full">
+        <div className="w-1/3 sm:w-full md:w-full flex flex-col justify-center gap-2">
           <span className="title text-7xl 2xl:text-[5rem] font-serif">
             {selectedProject.text}
           </span>
@@ -27,7 +27,7 @@ export const ProjectTemplate = ({ selectedProject }) => {
           </div>
         </div>
         <div
-          className={`flex flex-row justify-center items-center max-w-[60%]`}
+          className={`flex flex-row justify-center items-center max-w-[60%] sm:max-w-full md:max-w-full`}
           style={{ aspectRatio: customAspectRatio }}
         >
           <div className="shadow-md dark:shadow-test">
