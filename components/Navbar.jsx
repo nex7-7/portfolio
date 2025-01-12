@@ -1,15 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 // components
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { ModeToggle } from "./ModeToggle";
 import { Button } from "./ui/button";
 
@@ -17,20 +12,51 @@ import { Button } from "./ui/button";
 import { scrollToSection } from "@/app/functions";
 
 export const Navbar = () => {
-  const buttons = [
-    {
-      id: "#About",
-      name: "About",
-    },
-    {
-      id: "#Projects",
-      name: "Projects",
-    },
-    {
-      id: "#Contact",
-      name: "Contact",
-    },
-  ];
+  const [page, setPage] = React.useState("home");
+  const router = useRouter();
+  const path = usePathname();
+
+  React.useEffect(() => {
+    if (path === "/") {
+      setPage("home");
+    } else {
+      setPage("project");
+    }
+  }, []);
+
+  const buttons = {
+    home: [
+      {
+        id: "#About",
+        name: "About",
+        link: null,
+      },
+      {
+        id: "#Projects",
+        name: "Projects",
+        link: null,
+      },
+      {
+        id: "#Contact",
+        name: "Contact",
+        link: null,
+      },
+    ],
+    project: [{ id: null, name: "Home", link: "/" }],
+  };
+
+  // console.log(page);
+
+  function handleNav(id = null, link = null) {
+    if (page === "home") {
+      console.log(id)
+      scrollToSection(id);
+    } else {
+      if (link) {
+        router.push(link);
+      }
+    }
+  }
 
   // TODO: Add this to nav className:
   // bg-gradient-to-br from-[rgba(255,255,255,0.5)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(255,255,255,0.2)] dark:to-[rgba(0,0,0,0.3)] backdrop-blur-sm dark:backdrop-blur-xl bg-transparent
@@ -45,11 +71,11 @@ export const Navbar = () => {
 
       <div className="flex flex-row justify-between items-center gap-10 sm:gap-4 md:gap-4">
         <div className="sm:hidden md:hidden flex flex-row justify-between items-center gap-14">
-          {buttons.map((button) => (
+          {buttons[page].map((button) => (
             <Button
               variant="link"
               key={button.id}
-              onClick={() => scrollToSection(button.id)}
+              onClick={() => handleNav(button.id, button.link)}
             >
               <p className="text-xl 2xl:text-2xl font-light">{button.name}</p>
             </Button>

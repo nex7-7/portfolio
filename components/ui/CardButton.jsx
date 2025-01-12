@@ -2,6 +2,7 @@
 
 import toast from "react-hot-toast";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { useRouter } from "next/navigation";
 
 import { heightCalc } from "@/app/functions";
 import { useEffect } from "react";
@@ -11,9 +12,11 @@ export const CardButton = ({ name, link }) => {
   //   heightCalc();
   // },[]);
 
+  const router = useRouter()
+
   const projectShow = (link) => {
     if (link) {
-      window.open(link);
+      router.push(link);
     } else {
       toast("Coming Soon!", {
         style: {
@@ -24,6 +27,7 @@ export const CardButton = ({ name, link }) => {
       });
     }
   };
+
   return (
     <div
       className="buttonProj flex flex-row gap-2 justify-center items-center border px-3 py-1"
