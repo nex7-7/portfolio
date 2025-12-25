@@ -8,7 +8,7 @@ export default function Portal() {
     (project) => project.text === "NMIMS Portal"
   );
   const backgroundBlur =
-    " bg-gradient-to-r from-[rgba(255,255,255,0.5)] via-[rgba(255,255,255,0.4)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(0,0,0,0.9)] dark:via-[rgba(0,0,0,0.7)] dark:to-[rgba(0,0,0,0.6)] backdrop-blur-sm dark:backdrop-blur-xl bg-transparent";
+    " bg-linear-to-r from-[rgba(255,255,255,0.5)] via-[rgba(255,255,255,0.4)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(0,0,0,0.9)] dark:via-[rgba(0,0,0,0.7)] dark:to-[rgba(0,0,0,0.6)] backdrop-blur-xs dark:backdrop-blur-xl bg-transparent";
   const customAspectRatio = `${selectedProject.imgWidth}/${selectedProject.imgHeight}`;
   return (
     <main className="h-svh flex flex-col justify-start align-top">

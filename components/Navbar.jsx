@@ -59,7 +59,7 @@ export const Navbar = () => {
   }
 
   // TODO: Add this to nav className:
-  // bg-gradient-to-br from-[rgba(255,255,255,0.5)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(255,255,255,0.2)] dark:to-[rgba(0,0,0,0.3)] backdrop-blur-sm dark:backdrop-blur-xl bg-transparent
+  // bg-linear-to-br from-[rgba(255,255,255,0.5)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(255,255,255,0.2)] dark:to-[rgba(0,0,0,0.3)] backdrop-blur-xs dark:backdrop-blur-xl bg-transparent
 
   return (
     <nav className="absolute top-0 left-0 z-10 flex flex-row justify-between items-center h-24 2xl:h-[12vh] w-full px-10 sm:px-6 md:px-6">

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export const ProjectTemplate = ({ selectedProject }) => {
   const backgroundBlur =
-    " bg-gradient-to-r from-[rgba(255,255,255,0.5)] via-[rgba(255,255,255,0.4)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(0,0,0,0.9)] dark:via-[rgba(0,0,0,0.7)] dark:to-[rgba(0,0,0,0.6)] backdrop-blur-sm dark:backdrop-blur-xl bg-transparent";
+    " bg-linear-to-r from-[rgba(255,255,255,0.5)] via-[rgba(255,255,255,0.4)] to-[rgba(255,255,255,0.3)] dark:from-[rgba(0,0,0,0.9)] dark:via-[rgba(0,0,0,0.7)] dark:to-[rgba(0,0,0,0.6)] backdrop-blur-xs dark:backdrop-blur-xl bg-transparent";
   const customAspectRatio = `${selectedProject.imgWidth}/${selectedProject.imgHeight}`;
 
   return (
-    <div className="mt-[6rem] 2xl:mt-[12vh] sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 w-full h-[calc(100%-6rem)]">
+    <div className="mt-24 2xl:mt-[12vh] sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 w-full h-[calc(100%-6rem)]">
       <div className="flex flex-row sm:flex-col md:flex-col justify-between gap-5 h-full">
         <div className="w-1/3 sm:w-full md:w-full flex flex-col justify-center gap-2">
           <span className="title text-7xl 2xl:text-[5rem] font-serif">

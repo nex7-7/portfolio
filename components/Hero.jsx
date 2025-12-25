@@ -25,7 +25,7 @@ export const Hero = () => {
   return (
     <div className="h-svh relative">
       {/*<Video />*/}
-      <div className="mt-[6rem] 2xl:mt-[12vh] absolute sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 hero flex flex-col justify-start gap-4 2xl:gap-8 sm:gap-8 top-0 left-0 w-full h-[calc(100%-6rem)]">
+      <div className="mt-24 2xl:mt-[12vh] absolute sm:px-10 sm:py-6 md:px-10 md:py-6 px-16 py-10 hero flex flex-col justify-start gap-4 2xl:gap-8 sm:gap-8 top-0 left-0 w-full h-[calc(100%-6rem)]">
         <span className="sm:text-3xl md:text-3xl text-5xl 2xl:text-[4rem] text-primary font-serif italic">
           I&apos;m a
         </span>
