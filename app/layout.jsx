@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
       <body
         className={cn(
