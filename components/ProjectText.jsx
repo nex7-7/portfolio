@@ -17,9 +17,9 @@ export const ProjectText = ({ textItems, active, setActive }) => {
             ? (active - textItem.id) * 0.725
             : (textItem.id - active) * 0.725;
         if (textItem.id == active) {
-          className = `absolute text-5xl 2xl:text-[3.375rem] text-primary drop-shadow-light dark:drop-shadow-dark font-semibold transition-all ease-out duration-500`;
+          className = `uppercase cursor-pointer absolute text-5xl 2xl:text-[3.375rem] text-primary drop-shadow-light dark:drop-shadow-dark font-semibold transition-all ease-out duration-500`;
         } else {
-          className = `absolute text-4xl 2xl:text-[3rem] text-muted-foreground font-semibold transition-all ease-out duration-500`;
+          className = `uppercase cursor-pointer absolute text-4xl 2xl:text-[3rem] text-muted-foreground font-semibold transition-all ease-out duration-500`;
         }
 
         return (

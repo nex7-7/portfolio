@@ -30,7 +30,7 @@ export const CardButton = ({ name, link }) => {
 
   return (
     <div
-      className="buttonProj flex flex-row gap-2 justify-center items-center border px-3 py-1"
+      className="cursor-pointer buttonProj flex flex-row gap-2 justify-center items-center border px-3 py-1"
       onClick={() => projectShow(link)}
     >
       <span className="text-right text-md 2xl:text-xl font-light">{name}</span>
