@@ -45,3 +45,5 @@ public/_next-video
 
 #ide
 .idea
+
+.node-version
