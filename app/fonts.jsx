@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
-  fallback: ["arial"],
   variable: "--font-sans",
 });
 
